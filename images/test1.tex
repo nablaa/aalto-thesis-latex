@@ -1,0 +1,16 @@
+\begin{tikzpicture}[auto,node distance=3cm,on grid]
+	\tikzstyle{round} = [draw,circle,minimum size=20pt,font=\footnotesize,fill=gray]
+	\tikzstyle{link} = [loosely dashed]
+
+	\node[round] at (0,0) (r1) {R1};
+	\node[round] at (5,5) (r2) {R2};
+	\node[round] at (10,0) (r3) {R3};
+
+	\begin{scope}[link]
+		\draw (r1) -- (r2);
+		\draw (r2) -- (r3);
+		\draw (r3) -- (r1);
+	\end{scope}
+\end{tikzpicture}
+
+
