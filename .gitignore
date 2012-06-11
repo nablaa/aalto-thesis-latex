@@ -1,0 +1,16 @@
+*.pdf
+*.swp
+*~
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.bcf
+*.run.xml
+*.synctex.gz
+*.vrb
+
