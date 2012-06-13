@@ -59,6 +59,9 @@
 
 % SI units. See table in 2lorem.tex for example
 \usepackage{siunitx}
+\sisetup{
+    alsoload=binary
+}
 
 % Publication quality tables. See table in 2lorem.tex for example
 \usepackage{booktabs}
@@ -66,14 +69,14 @@
 % Use biber instead of bibtex as it supports UTF-8 among other things
 \usepackage[backend=biber,style=numeric-verb,sortcites=true,sorting=none]{biblatex}
 
+% Nicer looking caption for figures, tables, etc.
+\usepackage[labelfont={bf},textfont={it}]{caption}
+
 % Multiple figures inside one figure. See figure in 1lipsum.tex for example
 \usepackage{subfig}
 
 % Inconsolata monospace font for verbatim environment
 \usepackage{inconsolata}
-
-% Nicer looking caption for figures, tables, etc.
-\usepackage[labelfont={bf},textfont={it}]{caption}
 
 % For rotating figures
 \usepackage{rotating}
@@ -285,17 +288,44 @@
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-In id fringilla velit. Maecenas sed ante sit amet nisi iaculis bibendum sed vel elit. Quisque eleifend lacus nec ipsum lobortis ornare. Nam lectus diam, facilisis eget porttitor ac, fringilla quis massa. Phasellus ac dolor sem, eget varius lacus. Sed sit amet ipsum eget arcu tristique aliquam. Integer aliquam velit sit amet odio tempus commodo. Quisque commodo lacus in leo sagittis vel dignissim quam vestibulum. Cras fringilla velit et diam dictum faucibus. Pellentesque at eros non mauris auctor euismod. Nullam convallis arcu vel lectus sollicitudin rutrum. Praesent consequat, nisl at pretium posuere, neque arcu dapibus lacus, ut sollicitudin elit velit ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+In id fringilla velit. Maecenas sed ante sit amet nisi iaculis bibendum sed vel
+elit. Quisque eleifend lacus nec ipsum lobortis ornare. Nam lectus diam,
+facilisis eget porttitor ac, fringilla quis massa. Phasellus ac dolor sem, eget
+varius lacus. Sed sit amet ipsum eget arcu tristique aliquam. Integer aliquam
+velit sit amet odio tempus commodo. Quisque commodo lacus in leo sagittis vel
+dignissim quam vestibulum. Cras fringilla velit et diam dictum faucibus.
+Pellentesque at eros non mauris auctor euismod. Nullam convallis arcu vel lectus
+sollicitudin rutrum. Praesent consequat, nisl at pretium posuere, neque arcu
+dapibus lacus, ut sollicitudin elit velit ultricies libero. Vestibulum ante
+ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
-Nulla semper hendrerit molestie. Pellentesque blandit velit sit amet est vestibulum faucibus. Nullam massa turpis, venenatis non mollis fringilla, mattis et diam. Fusce molestie convallis elementum. Morbi nec lacus dapibus arcu mollis gravida. Aliquam erat volutpat. Nam vitae magna nunc. Nunc ut ipsum at massa porttitor vestibulum. Praesent diam lorem, ultrices nec vestibulum id, volutpat nec lacus.
+Nulla semper hendrerit molestie. Pellentesque blandit velit sit amet est
+vestibulum faucibus. Nullam massa turpis, venenatis non mollis fringilla, mattis
+et diam. Fusce molestie convallis elementum. Morbi nec lacus dapibus arcu mollis
+gravida. Aliquam erat volutpat. Nam vitae magna nunc. Nunc ut ipsum at massa
+porttitor vestibulum. Praesent diam lorem, ultrices nec vestibulum id, volutpat
+nec lacus.
 }
 
 % Abstract in Finnish
 % ------------------------------------------------------------------
 \thesisabstract{finnish}{
-Cras tincidunt bibendum erat, vel tincidunt diam porttitor aliquam. Donec sit amet urna non felis placerat pharetra. Aenean ultrices facilisis nulla vitae semper. Nullam non libero quis dui fermentum aliquam id vel eros. Praesent elementum tortor quis sem congue iaculis sit amet eget nisl. Quisque erat tortor, condimentum eu volutpat et, blandit et augue. Phasellus erat turpis, pretium non feugiat id, posuere id velit. Vestibulum ut sapien felis, quis convallis dui.
+Cras tincidunt bibendum erat, vel tincidunt diam porttitor aliquam. Donec sit
+amet urna non felis placerat pharetra. Aenean ultrices facilisis nulla vitae
+semper. Nullam non libero quis dui fermentum aliquam id vel eros. Praesent
+elementum tortor quis sem congue iaculis sit amet eget nisl. Quisque erat
+tortor, condimentum eu volutpat et, blandit et augue. Phasellus erat turpis,
+pretium non feugiat id, posuere id velit. Vestibulum ut sapien felis, quis
+convallis dui.
 
-In elementum est eu nulla hendrerit feugiat. In sodales diam vel lacus cursus tincidunt. Morbi nibh dui, imperdiet non vestibulum non, dignissim id risus. Sed sollicitudin neque lectus, porttitor sollicitudin elit. Nulla facilisi. Nullam in ante eu mi suscipit sollicitudin. Sed est velit, gravida facilisis varius eget, tempus sed urna. Aliquam erat volutpat. Nam semper condimentum nisi. Nullam scelerisque, metus nec sodales vulputate, purus augue venenatis urna, sit amet mattis turpis nisl ac metus. Mauris nec odio ut neque condimentum vulputate vel in turpis. Nulla facilisi. Nulla id tellus sapien, vitae blandit lorem.
+In elementum est eu nulla hendrerit feugiat. In sodales diam vel lacus cursus
+tincidunt. Morbi nibh dui, imperdiet non vestibulum non, dignissim id risus. Sed
+sollicitudin neque lectus, porttitor sollicitudin elit. Nulla facilisi. Nullam
+in ante eu mi suscipit sollicitudin. Sed est velit, gravida facilisis varius
+eget, tempus sed urna. Aliquam erat volutpat. Nam semper condimentum nisi.
+Nullam scelerisque, metus nec sodales vulputate, purus augue venenatis urna, sit
+amet mattis turpis nisl ac metus. Mauris nec odio ut neque condimentum vulputate
+vel in turpis. Nulla facilisi. Nulla id tellus sapien, vitae blandit lorem.
 }
 
 % Acknowledgements
@@ -310,7 +340,16 @@ In elementum est eu nulla hendrerit feugiat. In sodales diam vel lacus cursus ti
 % The star means that the chapter isn't numbered and does not
 % show up in the TOC
 \chapter*{Acknowledgements} % TODO
-In id fringilla velit. Maecenas sed ante sit amet nisi iaculis bibendum sed vel elit. Quisque eleifend lacus nec ipsum lobortis ornare. Nam lectus diam, facilisis eget porttitor ac, fringilla quis massa. Phasellus ac dolor sem, eget varius lacus. Sed sit amet ipsum eget arcu tristique aliquam. Integer aliquam velit sit amet odio tempus commodo. Quisque commodo lacus in leo sagittis vel dignissim quam vestibulum. Cras fringilla velit et diam dictum faucibus. Pellentesque at eros non mauris auctor euismod. Nullam convallis arcu vel lectus sollicitudin rutrum. Praesent consequat, nisl at pretium posuere, neque arcu dapibus lacus, ut sollicitudin elit velit ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+In id fringilla velit. Maecenas sed ante sit amet nisi iaculis bibendum sed vel
+elit. Quisque eleifend lacus nec ipsum lobortis ornare. Nam lectus diam,
+facilisis eget porttitor ac, fringilla quis massa. Phasellus ac dolor sem, eget
+varius lacus. Sed sit amet ipsum eget arcu tristique aliquam. Integer aliquam
+velit sit amet odio tempus commodo. Quisque commodo lacus in leo sagittis vel
+dignissim quam vestibulum. Cras fringilla velit et diam dictum faucibus.
+Pellentesque at eros non mauris auctor euismod. Nullam convallis arcu vel lectus
+sollicitudin rutrum. Praesent consequat, nisl at pretium posuere, neque arcu
+dapibus lacus, ut sollicitudin elit velit ultricies libero. Vestibulum ante
+ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
 
 \vskip 10mm
 
